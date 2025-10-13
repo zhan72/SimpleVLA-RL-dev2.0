@@ -52,22 +52,29 @@
 # 🔧Key Implementation
 
 SimpleVLA-RL extends veRL with VLA-specific components across the following modules:
+
 **[`verl/trainer/main_ppo.py`](verl/trainer/main_ppo.py)**
 - Main entry point with ray initialization
 - `RobRewardManager` for reward distribution
+
 **[`verl/trainer/ppo/ray_trainer.py`](verl/trainer/ppo/ray_trainer.py)**
 - Main RL training loop: data loading, VLA rollout, model updates, evaluation, checkpointing
 - RL algorithm-specific advantage computation
+
 **[`verl/workers/fsdp_workers.py`](verl/workers/fsdp_workers.py)**
 - Source of core functions called in `ray_trainer.py`
 - VLA model/optimizer initialization, `generate_sequences`, `compute_entropy`, `update_actor`
+
 **[`verl/workers/actor/dp_rob.py`](verl/workers/actor/dp_rob.py)**
 - Specific implementation of functions in `fsdp_workers.py`
 - RL loss computation, policy updates, `compute_log_prob`, `compute_entropy`
+
 **[`verl/workers/rollout/rob_rollout.py`](verl/workers/rollout/rob_rollout.py)**
 - VLA rollout implementation: environment creation, multi-environment parallel rendering, VLA action generation, environment interaction, video saving, trajectory and 0/1 reward collection
+
 **[`verl/utils/dataset/rob_dataset.py`](verl/utils/dataset/rob_dataset.py)**
 - Dataset construction for training/testing across benchmarks
+
 **[`verl/utils/vla_utils/`](verl/utils/vla_utils/)**
 - VLA model implementations (OpenVLA-OFT/OpenVLA from official code)
 </div>
@@ -138,7 +145,7 @@ or
 bash examples/run_openvla_oft_rl_twin2.sh
 ```
 
-## 📃 Main Results
+# 📃 Main Results
 
 We evaluate SimpleVLA-RL on the LIBERO using OpenVLA-OFT. SimpleVLA-RL improves the performance of OpenVLA-OFT to 97.6 points on LIBERO-Long and sets a new state-of-the-art. Remarkably, using only one trajectory per task for cold-start SFT, SimpleVLA-RL raises the performance of OpenVLA-OFT from 17.3 to 91.7, yielding an improvement of 74.4 points (430.1%).
 
