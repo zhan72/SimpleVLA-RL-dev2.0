@@ -41,6 +41,9 @@ Overview of **SimpleVLA-RL**. SimpleVLA-RL is an efficient RL framework for VLA 
 https://github.com/zhan72/SimpleVLA-RL-dev2.0/blob/main/figs/simplevla2_pre.mp4
 
 
+https://raw.githubusercontent.com/zhan72/SimpleVLA-RL-dev2.0/main/figs/simplevla2_pre.mp4
+
+
 # 🎉News
 - **[2025-10-01]** **SimpleVLA-RL** now supports RoboTwin2.0 Benchmark. Feel free to experiment with it!
 - **[2025-09-12]** Excited to release the **SimpleVLA-RL** paper! Check it out: [Paper](https://arxiv.org/abs/2509.09674).
