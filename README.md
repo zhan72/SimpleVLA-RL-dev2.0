@@ -24,7 +24,10 @@
 </div> -->
 
 > We demonstrate that even simple 0/1 rewards can enable effective, scalable, generalizable online RL for VLA models.
-https://github.com/zhan72/SimpleVLA-RL-dev2.0/blob/main/figs/simplevla2_pre.mp4
+
+
+
+
 
 <div align="center">
 <img src="figs/teaser.png" alt="Overview of SimpleVLA-RL." width="90%" />
@@ -34,6 +37,9 @@ Overview of **SimpleVLA-RL**. SimpleVLA-RL is an efficient RL framework for VLA 
 <!-- <sub>*Our openvla-oft model design differs from the official one. Our setup: third-person image, language instruction; parallel decoding (PD) & action chunking (AC). Official setup: third-person image, wrist camera image, robot proprioceptive state, language instruction; PD, AC, and continuous actions with L1 regression (Cont-L1).*</sub> -->
 
 </div>
+
+https://github.com/zhan72/SimpleVLA-RL-dev2.0/blob/main/figs/simplevla2_pre.mp4
+
 
 # 🎉News
 - **[2025-10-01]** **SimpleVLA-RL** now supports RoboTwin2.0 Benchmark. Feel free to experiment with it!
