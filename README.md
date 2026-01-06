@@ -24,7 +24,7 @@
 </div> -->
 
 > We demonstrate that even simple 0/1 rewards can enable effective, scalable, generalizable online RL for VLA models.
-
+https://github.com/zhan72/SimpleVLA-RL-dev2.0/blob/main/figs/simplevla2_pre.mp4
 
 <div align="center">
 <img src="figs/teaser.png" alt="Overview of SimpleVLA-RL." width="90%" />
